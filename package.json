@@ -1,0 +1,13 @@
+{
+    "name": "com.hexdogstudio.ui.container",
+    "displayName": "Container",
+    "description": "Custom ui extension for better UI layout management",
+    "version": "1.0.0",
+    "unity": "2017.1",
+    "license": "MIT",
+    "author": {
+      "name": "Benedek Mészáros",
+      "email": "benedek.meszaros.contact@gmail.com",
+      "url": "https://github.com/benedekmeszaros"
+    }
+}
