@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace HexTools.UI.Components
 {
-    [RequireComponent(typeof(RectTransform))]
+    [RequireComponent(typeof(RectTransform)), DisallowMultipleComponent]
     public class Container : UIBehaviour, ILayoutSelfController, ILayoutController
     {
         private class Offset
