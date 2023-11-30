@@ -10,12 +10,12 @@ namespace HexTools.UI.Components.Editor
         private int widthSelect = -1;
         private int heightSelect = -1;
         private Container container;
-        [SerializeField] private SerializedProperty width;
-        [SerializeField] private SerializedProperty minWidth;
-        [SerializeField] private SerializedProperty maxWidth;
-        [SerializeField] private SerializedProperty height;
-        [SerializeField] private SerializedProperty minHeight;
-        [SerializeField] private SerializedProperty maxHeight;
+        private SerializedProperty width;
+        private SerializedProperty minWidth;
+        private SerializedProperty maxWidth;
+        private SerializedProperty height;
+        private SerializedProperty minHeight;
+        private SerializedProperty maxHeight;
 
         public override void OnInspectorGUI()
         {
