@@ -30,11 +30,11 @@ namespace HexTools.UI.Components
             public float Bottom { get => bottom; set => bottom = value; }
         }
 
-        [SerializeField] private float width = -3;
+        [SerializeField] private float width = -2;
         [SerializeField] private float minWidth;
         [SerializeField] private float maxWidth;
         [SerializeField] private bool isClampedHorizontally;
-        [SerializeField] private float height = -3;
+        [SerializeField] private float height = -2;
         [SerializeField] private float minHeight;
         [SerializeField] private float maxHeight;
         [SerializeField] private bool isClampedVertically;
