@@ -106,7 +106,7 @@ namespace HexTools.UI.Components
 
         private void CalculateRect()
         {
-            if (rectTransform.hasChanged && margine != null)
+            if (IsActive() && rectTransform.hasChanged && margine != null)
             {
                 Vector2 pivot = rectTransform.pivot;
                 offsetBackup.Left = rectTransform.offsetMin.x;
