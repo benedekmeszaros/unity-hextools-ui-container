@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEditor;
-using HexTools.UI.Components;
 
 namespace HexTools.UI.Components.Editor
 {
