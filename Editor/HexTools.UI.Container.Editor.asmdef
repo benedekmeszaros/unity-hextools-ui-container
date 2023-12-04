@@ -1,0 +1,16 @@
+{
+    "name": "HexTools.UI.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b456ff0154b86764384c71d1694e1b93"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
