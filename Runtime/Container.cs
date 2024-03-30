@@ -85,6 +85,7 @@ namespace HexTools.UI.Components
             m_Rect = transform as RectTransform;
             if (margine == null)
                 margine = new RectOffset(0, 0, 0, 0);
+            CalculateRect();
             SetDirty();
         }
         protected override void OnDisable()
