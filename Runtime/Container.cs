@@ -217,6 +217,13 @@ namespace HexTools.UI.Components
                 rectTransform.offsetMax = new Vector2(offsetBackup.Right, offsetBackup.Top);
                 rectTransform.pivot = pivot;
             }
+            else
+            {
+                rectTransform.anchorMin = new Vector2(0, 0);
+                rectTransform.anchorMax = new Vector2(1, 1);
+                m_Tracker.Add(this, rectTransform, DrivenTransformProperties.Anchors);
+                m_Tracker.Add(this, rectTransform, DrivenTransformProperties.SizeDelta);
+            }
         }
     }
 }
