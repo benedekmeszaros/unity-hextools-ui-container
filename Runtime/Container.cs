@@ -106,7 +106,7 @@ namespace HexTools.UI.Components
 
         private void CalculateRect()
         {
-            if (IsActive() && rectTransform.hasChanged && margine != null)
+            if (rectTransform.hasChanged && margine != null)
             {
                 Vector2 pivot = rectTransform.pivot;
                 offsetBackup.Left = rectTransform.offsetMin.x;
@@ -216,18 +216,6 @@ namespace HexTools.UI.Components
                 rectTransform.offsetMin = new Vector2(offsetBackup.Left, offsetBackup.Bottom);
                 rectTransform.offsetMax = new Vector2(offsetBackup.Right, offsetBackup.Top);
                 rectTransform.pivot = pivot;
-            }
-            else
-            {
-                rectTransform.anchorMin = new Vector2(0, 0);
-                rectTransform.anchorMax = new Vector2(1, 1);
-                m_Tracker.Add(this, rectTransform, DrivenTransformProperties.Anchors);
-                m_Tracker.Add(this, rectTransform, DrivenTransformProperties.SizeDelta);
-
-                if(width == 0)
-                    m_Tracker.Add(this, rectTransform, DrivenTransformProperties.AnchoredPositionX);
-                if(height == 0)
-                    m_Tracker.Add(this, rectTransform, DrivenTransformProperties.AnchoredPositionY);
             }
         }
     }
