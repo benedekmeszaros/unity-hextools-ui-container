@@ -223,6 +223,11 @@ namespace HexTools.UI.Components
                 rectTransform.anchorMax = new Vector2(1, 1);
                 m_Tracker.Add(this, rectTransform, DrivenTransformProperties.Anchors);
                 m_Tracker.Add(this, rectTransform, DrivenTransformProperties.SizeDelta);
+
+                if(width == 0)
+                    m_Tracker.Add(this, rectTransform, DrivenTransformProperties.AnchoredPositionX);
+                if(height == 0)
+                    m_Tracker.Add(this, rectTransform, DrivenTransformProperties.AnchoredPositionY);
             }
         }
     }
